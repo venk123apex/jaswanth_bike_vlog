@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top 10 Motorcycles</title>
+  <style>
+    body { font-family: sans-serif; max-width: 900px; margin: 20px auto; padding: 0 10px; background: #f4f4f9; color: #222; }
+    h1 { text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #fff; padding: 15px; border-radius: 8px; border: 1px solid #ddd; text-align: center; }
+    .card img { width: 100%; height: 160px; object-fit: cover; border-radius: 5px; }
+    button { margin-top: 10px; padding: 8px 16px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+    .details { display: none; margin-top: 10px; padding: 10px; background: #eef5ff; text-align: left; font-size: 0.9em; border-radius: 4px; }
+  </style>
+</head>
+<body>
+
+  <h1>Top 10 Motorcycles</h1>
+
+  <div class="grid">
+    <!-- Bike 1 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=400" alt="Yamaha YZF-R1">
+      <h3>1. Yamaha YZF-R1</h3>
+      <button onclick="toggleDetails('bike1')">View Details</button>
+      <div id="bike1" class="details">
+        <strong>Engine:</strong> 998cc crossplane inline-4<br>
+        <strong>Power:</strong> 200 hp<br>
+        <strong>Specs:</strong> MotoGP-derived electronics package, titanium connecting rods, and unmatched track handling precision.
+      </div>
+    </div>
+
+    <!-- Bike 2 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=400" alt="Kawasaki Ninja H2">
+      <h3>2. Kawasaki Ninja H2</h3>
+      <button onclick="toggleDetails('bike2')">View Details</button>
+      <div id="bike2" class="details">
+        <strong>Engine:</strong> 998cc supercharged inline-4<br>
+        <strong>Power:</strong> 228+ hp<br>
+        <strong>Specs:</strong> Features an in-house developed centrifugal supercharger delivering ferocious acceleration and top-tier hyper-sport engineering.
+      </div>
+    </div>
+
+    <!-- Bike 3 -->
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.0TAfVhe89ietKq7b6gnTegHaE7?w=226&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Ducati Panigale V4">
+      <h3>3. Ducati Panigale V4</h3>
+      <button onclick="toggleDetails('bike3')">View Details</button>
+      <div id="bike3" class="details">
+        <strong>Engine:</strong> 1,103cc Desmosedici Stradale V4<br>
+        <strong>Power:</strong> 214 hp<br>
+        <strong>Specs:</strong> Counter-rotating crankshaft, dry weight optimization, and razor-sharp Italian superbike aerodynamics.
+      </div>
+    </div>
+
+    <!-- Bike 4 -->
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.rXNFQ-271zOFaF11YOCVVwHaE7?w=264&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Honda CBR1000RR-R Fireblade">
+      <h3>4. Honda CBR1000RR-R Fireblade</h3>
+      <button onclick="toggleDetails('bike4')">View Details</button>
+      <div id="bike4" class="details">
+        <strong>Engine:</strong> 1000cc inline-4<br>
+        <strong>Power:</strong> 214 hp<br>
+        <strong>Specs:</strong> Built with direct input from HRC racing programs, winglets for high-speed stability, and an advanced IMU.
+      </div>
+    </div>
+
+    <!-- Bike 5 -->
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.ixy2DjfDPeAx2qzTPzqALAHaEK?w=320&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="BMW S1000RR">
+      <h3>5. BMW S1000RR</h3>
+      <button onclick="toggleDetails('bike5')">View Details</button>
+      <div id="bike5" class="details">
+        <strong>Engine:</strong> 999cc inline-4 with ShiftCam<br>
+        <strong>Power:</strong> 205 hp<br>
+        <strong>Specs:</strong> ShiftCam variable valve timing technology broadens the powerband for massive low-end torque and screaming top-end output.
+      </div>
+    </div>
+
+    <!-- Bike 6 -->
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.uvYGaYw3pNXvH56XTrbogQHaE8?w=235&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Suzuki Hayabusa">
+      <h3>6. Suzuki Hayabusa</h3>
+      <button onclick="toggleDetails('bike6')">View Details</button>
+      <div id="bike6" class="details">
+        <strong>Engine:</strong> 1,340cc inline-4<br>
+        <strong>Power:</strong> 187 hp<br>
+        <strong>Specs:</strong> Legendary status for straight-line stability, wind-cheating bodywork, and bulletproof reliability.
+      </div>
+    </div>
+
+    <!-- Bike 7 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1558980664-3a031cf67ea8?w=400" alt="KTM 1290 Super Duke R">
+      <h3>7. KTM 1290 Super Duke R</h3>
+      <button onclick="toggleDetails('bike7')">View Details</button>
+      <div id="bike7" class="details">
+        <strong>Engine:</strong> 1,301cc LC8 V-twin<br>
+        <strong>Power:</strong> 180 hp<br>
+        <strong>Specs:</strong> Known as the "Beast," it combines naked-bike ergonomics with brutal torque and track-capable agility.
+      </div>
+    </div>
+
+    <!-- Bike 8 -->
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.qHWy1Akezftbab-rokOMuwHaFj?w=246&h=185&c=7&r=0&o=7&pid=1.7&rm=3" alt="riumph Bonneville T120">
+      <h3>8. Triumph Bonneville T120</h3>
+      <button onclick="toggleDetails('bike8')">View Details</button>
+      <div id="bike8" class="details">
+        <strong>Engine:</strong> 1,200cc high-torque parallel-twin<br>
+        <strong>Power:</strong> 79 hp<br>
+        <strong>Specs:</strong> Timeless classic British styling paired with modern safety electronics, ABS, and ride-by-wire throttles.
+      </div>
+    </div>
+
+    <!-- Bike 9 -->
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.vPbs_WhFCJpQg3YjCJ4HlQHaE7?w=255&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Harley-Davidson Fat Boy">
+      <h3>9. Harley-Davidson Fat Boy</h3>
+      <button onclick="toggleDetails('bike9')">View Details</button>
+      <div id="bike9" class="details">
+        <strong>Engine:</strong> Milwaukee-Eight 114 V-twin<br>
+        <strong>Power:</strong> 94 hp (Torque: 155 Nm)<br>
+        <strong>Specs:</strong> Iconic muscular silhouette, solid Lakester wheels, and a relaxed, low-slung cruising geometry.
+      </div>
+    </div>
+
+    <!-- Bike 10 -->
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.Tb-McOCHLTnOYvYEmCjMDgHaFP?w=235&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="BMW R 1250 GS Adventure">
+      <h3>10. BMW R 1250 GS Adventure</h3>
+      <button onclick="toggleDetails('bike10')">View Details</button>
+      <div id="bike10" class="details">
+        <strong>Engine:</strong> 1,254cc shift-cam boxer twin<br>
+        <strong>Power:</strong> 136 hp<br>
+        <strong>Specs:</strong> The ultimate long-distance adventure tourer equipped with massive fuel range, electronic suspension, and rugged off-road geometry.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
